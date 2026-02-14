@@ -1,5 +1,4 @@
 const loginForm = document.querySelector(".login-form");
-console.log(loginForm);
 
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -14,17 +13,7 @@ loginForm.addEventListener("submit", (e) => {
       email: emailForm,
       password: passwordForm,
     };
+    console.log(obj);
+    loginForm.reset();
   }
-
-  console.log(obj);
-  loginForm.reset();
 });
-
-// const btn = document.querySelector(".form-btn");
-// console.log(btn);
-
-// btn.addEventListener("mouseover", () => {
-//   console.log("test");
-
-//   btn.classList.add("btn-hover");
-// });

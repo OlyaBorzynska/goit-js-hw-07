@@ -35,6 +35,6 @@ function itemsTemplate(array) {
   return array.map(itemTemplate).join(" ");
 }
 
-const galleryList = document.querySelector(".gallery-list");
+const gallery = document.querySelector(".gallery");
 
-galleryList.insertAdjacentHTML("beforeend", itemsTemplate(images));
+gallery.insertAdjacentHTML("beforeend", itemsTemplate(images));
